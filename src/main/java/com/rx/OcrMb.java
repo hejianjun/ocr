@@ -22,8 +22,7 @@ public class OcrMb {
         try {
             instance.setDatapath(new File(datapath).getPath());
             instance.setLanguage(language);
-            File imageFile = new File("C:\\Users\\hejianjun\\Documents\\My Hwdoc Files\\HWPDFOCR80\\IMAGE\\最高人民法院关于印发《人民法院民事裁判文书制作规范》《民事诉讼文书样式》的通知1",
-                    "最高人民法院关于印发《人民法院民事裁判文书制作规范》《民事诉讼文书样式》的通知1_00033.pdf");
+            File imageFile = new File("D:\\","最高人民法院关于印发《人民法院民事裁判文书制作规范》《民事诉讼文书样式》的通知1.pdf");
             List<IIOImage> imageList = ImageIOHelper.getIIOImageList(imageFile);
             Rectangle rectangle = new Rectangle(300, 300, 3000, 4500);
             String result = instance.doOCR(imageList, rectangle);
